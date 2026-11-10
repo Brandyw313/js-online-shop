@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Online Shop</title>
+  <script src="app.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      background: #f2f6fb;
+      color: #142338;
+      font-family: system-ui, sans-serif;
+      line-height: 1.5;
+    }
+
+    nav {
+      display: flex;
+      gap: 1.5rem;
+      padding: 1rem;
+      background: #142338;
+    }
+
+    nav a {
+      color: white;
+    }
+
+    #cart-count {
+      padding: 0.1rem 0.45rem;
+      border-radius: 1rem;
+      background: #deebff;
+      color: #142338;
+    }
+
+    main {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    section {
+      margin-bottom: 1rem;
+      padding: 1rem 1.25rem;
+      border: 1px solid #d2deee;
+      border-radius: 0.75rem;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#cart">Cart <span id="cart-count">0</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1>JS Online Shop</h1>
+      <p>Welcome to the shop. Check out our featured product below.</p>
+    </section>
+
+    <section id="shop">
+      <h2>Shop</h2>
+      <article>
+        <h3>Wireless Headphones</h3>
+        <p>Category: Electronics</p>
+        <p>Price: $49.99</p>
+        <p>In stock</p>
+      </article>
+    </section>
+
+    <section id="cart">
+      <h2>Cart</h2>
+      <p>Your cart is empty.</p>
+    </section>
+  </main>
+</body>
+</html>
